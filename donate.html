@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Overcomers Caring Ministries</title>
+    <meta name="description" content="Make a donation to Overcomers Caring Ministries to help uplift and empower vulnerable children through education, care, and hope.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/OCMlogo.png" alt="Overcomers Caring Ministries Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="our-work.html">Our Work</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="media-resources.html">Media & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="donate-button">
+                <a href="donate.html" class="btn btn-primary active">Donate Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Donation Hero Section -->
+        <section class="donation-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/IMG_9192.jpg');">
+            <div class="container">
+                <div class="donation-hero-content">
+                    <h1>Make a Difference Today</h1>
+                    <p>Your generosity helps provide education, nutrition, healthcare, and a loving environment for vulnerable children.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Options Section -->
+        <section class="donation-options-section">
+            <div class="container">
+                <div class="donation-wrapper">
+                    <div class="donation-sidebar">
+                        <div class="donation-impact">
+                            <h3>Your Impact</h3>
+                            <ul class="impact-list">
+                                <li>
+                                    <div class="impact-icon"><i class="fas fa-utensils"></i></div>
+                                    <div class="impact-text">
+                                        <h4>$25</h4>
+                                        <p>Provides meals for a child for one week</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="impact-icon"><i class="fas fa-book"></i></div>
+                                    <div class="impact-text">
+                                        <h4>$50</h4>
+                                        <p>Provides school supplies and books</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="impact-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <div class="impact-text">
+                                        <h4>$100</h4>
+                                        <p>Sponsors a child's education for one month</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="impact-icon"><i class="fas fa-home"></i></div>
+                                    <div class="impact-text">
+                                        <h4>$250</h4>
+                                        <p>Helps maintain safe housing for children</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="impact-icon"><i class="fas fa-heartbeat"></i></div>
+                                    <div class="impact-text">
+                                        <h4>$500</h4>
+                                        <p>Provides healthcare for five children</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="testimonial-quote">
+                                <p>"The support we receive from donors allows us to provide a safe haven and bright future for children who would otherwise have very limited opportunities."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="images/director.jpg" alt="OCM Director">
+                                <div class="author-info">
+                                    <h4>John Doe</h4>
+                                    <p>Executive Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donation-form-container">
+                        <div class="form-tabs">
+                            <button class="tab-btn active" data-tab="one-time">One-time Donation</button>
+                            <button class="tab-btn" data-tab="monthly">Monthly Giving</button>
+                        </div>
+                        
+                        <div class="donation-form-wrapper" id="one-time-form">
+                            <form id="donation-form" action="#" method="post">
+                                <div class="form-section">
+                                    <h3>Select Amount</h3>
+                                    <div class="amount-options">
+                                        <div class="amount-option">
+                                            <input type="radio" id="amount-25" name="donation-amount" value="25">
+                                            <label for="amount-25">$25</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="amount-50" name="donation-amount" value="50">
+                                            <label for="amount-50">$50</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="amount-100" name="donation-amount" value="100" checked>
+                                            <label for="amount-100">$100</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="amount-250" name="donation-amount" value="250">
+                                            <label for="amount-250">$250</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="amount-custom" name="donation-amount" value="custom">
+                                            <label for="amount-custom">Custom</label>
+                                        </div>
+                                    </div>
+                                    <div class="custom-amount-container" style="display: none;">
+                                        <div class="input-group">
+                                            <span class="currency-symbol">$</span>
+                                            <input type="number" id="custom-amount" name="custom-amount" min="1" placeholder="Enter amount">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h3>Your Information</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="first-name">First Name *</label>
+                                            <input type="text" id="first-name" name="first-name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Last Name *</label>
+                                            <input type="text" id="last-name" name="last-name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h3>Payment Information</h3>
+                                    <div class="payment-methods">
+                                        <div class="payment-method">
+                                            <input type="radio" id="payment-card" name="payment-method" value="card" checked>
+                                            <label for="payment-card">Credit/Debit Card</label>
+                                        </div>
+                                        <div class="payment-method">
+                                            <input type="radio" id="payment-paypal" name="payment-method" value="paypal">
+                                            <label for="payment-paypal">PayPal</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="card-payment-fields">
+                                        <div class="form-group">
+                                            <label for="card-number">Card Number *</label>
+                                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="expiry-date">Expiry Date *</label>
+                                                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cvv">CVV *</label>
+                                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="paypal-fields" style="display: none;">
+                                        <p class="payment-message">You will be redirected to PayPal to complete your donation.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <div class="form-group checkbox-group">
+                                        <input type="checkbox" id="add-fee" name="add-fee">
+                                        <label for="add-fee">Add 3% to cover transaction fees</label>
+                                    </div>
+                                    <div class="form-group checkbox-group">
+                                        <input type="checkbox" id="gift-honor" name="gift-honor">
+                                        <label for="gift-honor">Make this gift in honor of someone</label>
+                                    </div>
+                                    <div id="honor-fields" style="display: none;">
+                                        <div class="form-group">
+                                            <label for="honoree-name">Honoree's Name</label>
+                                            <input type="text" id="honoree-name" name="honoree-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="honoree-email">Honoree's Email (optional)</label>
+                                            <input type="email" id="honoree-email" name="honoree-email">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="donation-summary">
+                                    <h3>Donation Summary</h3>
+                                    <div class="summary-row">
+                                        <span>Donation Amount</span>
+                                        <span id="summary-amount">$100.00</span>
+                                    </div>
+                                    <div class="summary-row" id="fee-row" style="display: none;">
+                                        <span>Processing Fee (3%)</span>
+                                        <span id="summary-fee">$3.00</span>
+                                    </div>
+                                    <div class="summary-row total">
+                                        <span>Total</span>
+                                        <span id="summary-total">$100.00</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-large">Complete Donation</button>
+                                    <p class="secure-note"><i class="fas fa-lock"></i> Your donation is secure and encrypted</p>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="donation-form-wrapper" id="monthly-form" style="display: none;">
+                            <form id="monthly-donation-form" action="#" method="post">
+                                <!-- Similar form structure as one-time but with monthly context -->
+                                <div class="form-section">
+                                    <h3>Select Monthly Amount</h3>
+                                    <div class="amount-options">
+                                        <div class="amount-option">
+                                            <input type="radio" id="monthly-amount-10" name="monthly-donation-amount" value="10">
+                                            <label for="monthly-amount-10">$10</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="monthly-amount-25" name="monthly-donation-amount" value="25" checked>
+                                            <label for="monthly-amount-25">$25</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="monthly-amount-50" name="monthly-donation-amount" value="50">
+                                            <label for="monthly-amount-50">$50</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="monthly-amount-100" name="monthly-donation-amount" value="100">
+                                            <label for="monthly-amount-100">$100</label>
+                                        </div>
+                                        <div class="amount-option">
+                                            <input type="radio" id="monthly-amount-custom" name="monthly-donation-amount" value="custom">
+                                            <label for="monthly-amount-custom">Custom</label>
+                                        </div>
+                                    </div>
+                                    <div class="custom-amount-container" style="display: none;">
+                                        <div class="input-group">
+                                            <span class="currency-symbol">$</span>
+                                            <input type="number" id="monthly-custom-amount" name="monthly-custom-amount" min="1" placeholder="Enter amount">
+                                        </div>
+                                    </div>
+                                    <p class="monthly-note">Monthly donations provide consistent support for our children and programs. You can cancel anytime.</p>
+                                </div>
+                                
+                                <!-- Rest of the form fields similar to one-time donation -->
+                                <div class="form-section">
+                                    <h3>Your Information</h3>
+                                    <!-- Same fields as one-time form -->
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h3>Payment Information</h3>
+                                    <!-- Same fields as one-time form -->
+                                </div>
+                                
+                                <div class="donation-summary">
+                                    <h3>Monthly Donation Summary</h3>
+                                    <div class="summary-row">
+                                        <span>Monthly Amount</span>
+                                        <span id="monthly-summary-amount">$25.00</span>
+                                    </div>
+                                    <div class="summary-row total">
+                                        <span>Total Monthly</span>
+                                        <span id="monthly-summary-total">$25.00</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-large">Start Monthly Giving</button>
+                                    <p class="secure-note"><i class="fas fa-lock"></i> Your donation is secure and encrypted</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Give Section -->
+        <section class="other-ways-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Other Ways to Give</h2>
+                    <p>There are many ways you can support Overcomers Caring Ministries</p>
+                </div>
+                <div class="ways-grid">
+                    <div class="way-item">
+                        <div class="way-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Sponsor a Child</h3>
+                        <p>Make a lasting impact by sponsoring a child's education, meals, and healthcare on a monthly basis.</p>
+                        <a href="sponsor.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>In-Kind Gifts</h3>
+                        <p>Donate clothing, school supplies, food, or other needed items to support our children and programs.</p>
+                        <a href="in-kind.html" class="btn btn-secondary">See Needed Items</a>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Corporate Partnerships</h3>
+                        <p>Partner with us through corporate giving, matching gifts, or sponsoring specific projects.</p>
+                        <a href="corporate.html" class="btn btn-secondary">Partner With Us</a>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Legacy Giving</h3>
+                        <p>Include OCM in your will or estate planning to create a lasting impact for generations to come.</p>
+                        <a href="legacy.html" class="btn btn-secondary">Learn About Legacy Gifts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my donation tax-deductible?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Overcomers Caring Ministries is a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law. You will receive a tax receipt for your records.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How is my donation used?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your donation directly supports our programs for vulnerable children, including education, nutrition, healthcare, shelter, and emotional support. We strive to maintain low administrative costs, with over 85% of donations going directly to our programs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I cancel my monthly donation?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel your monthly donation at any time by contacting our donor support team at ministryovercomers@gmail.com or by calling +254724406285.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my payment information secure?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. We use industry-standard encryption and security practices to protect your personal and payment information. We never store your full credit card details on our servers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I donate by check or bank transfer?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can mail a check to our office at Ongata Rongai, Nairobi, Kenya. For bank transfers, please contact our finance team at ministryovercomers@gmail.com for our banking details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/OCMlogowhite.png" alt="Overcomers Caring Ministries Logo">
+                    </div>
+                    <p>Uplifting and empowering vulnerable children through the love of Christ.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61575170183218&mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/overcomerscaringministries/profilecard/?igsh=dDJxNWMyaW16eHVv" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ongata Rongai, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254724406285</li>
+                        <li><i class="fas fa-envelope"></i> ministryovercomers@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support Our Cause</h3>
+                    <a href="donate.html" class="btn btn-light">Donate Now</a>
+                    <p class="tax-info">OCM is a registered 501(c)(3) nonprofit organization</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Overcomers Caring Ministries. All Rights Reserved.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+</html> 
