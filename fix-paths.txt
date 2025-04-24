@@ -1,0 +1,1 @@
+Fixed paths in HTML files to use correct directory references
